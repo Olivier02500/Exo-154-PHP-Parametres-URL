@@ -10,7 +10,21 @@
  */
 
 // TODO Votre code ici.
+?>
 
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+</head>
+<body>
+
+<a href="./exo1.php?iteration=10">Exo 1</a>
+
+</body>
+</html>
+<?php
 
 /**
  * Exo 2
@@ -20,6 +34,12 @@
  * Pour chaque lien, le paramètre iteration prendra la valeur actuelle de votre variable de boucle ( $i par exemple ).
  */
 
+echo '<br><br>';
+
+for ($i = 0; $i < 10; $i++){
+    echo "<p><a href='./exo2.php?iteration=$i'>Exo 2</a></p>";
+}
+?>
 
 
 
